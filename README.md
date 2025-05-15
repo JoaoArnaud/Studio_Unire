@@ -16,3 +16,4 @@ trabalho feito por:
 
 - HTML5
 - CSS3
+- Figma
