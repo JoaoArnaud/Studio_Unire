@@ -2,27 +2,55 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Unire</title>
+    <link rel="stylesheet" href="contato.css">
 </head>
 
 <body>
+    <!-- cabeçalho -->
     <header>
-        <img src="C:\Users\joaoa\OneDrive\Documents\GitHub\projeto_site\imagens\imagem_logo.jpg" width="76px" height="65"><h1 class="StudiUnire">STUDIO UNIRE</h1>
-        <h2>SOBRE</h2> <h2>CONTATOS</h2>
+        <div class="retangulo_verde"></div>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="imagens/imagem_logo.jpg" width="76px" height="65" alt="Logo Studio Unire">
+                <h1>STUDIO UNIRE</h1>
+            </div>
+            <nav class="paginas">
+                <a href="sobre.html" class="sobre">SOBRE</a>
+                <a href="contato.html" class="contato">CONTATOS</a>
+            </nav>
+        </div>
     </header>
 
-    <div>
-        <h3>CONTATOS</h3>
-        <h4>RAVI ARNAUD</h4> <h4>MARIANA FARIAS</h4>
-        <h6>RAVIARNAUD@GMAIL.COM</h6><h6>MARIANAFARIAS@GMAIL.COM</h6>
-        <h6>+55 83 9114-7309</h6><h6>+55 83 8231-3010</h6>
-        <img src="C:\Users\joaoa\OneDrive\Documents\GitHub\projeto_site\imagens\imagem_sala.png" width="412.92px" height="309.69px">
+    <!-- seção contatos -->
+    <section class="contato">
+    <div class="caixa-branca">
+        <div class="contato-titulo">CONTATOS</div>
+        <div class="contatos">
+            <div class="contato-item">
+                <strong>RAVI ARNAUD</strong><br>
+                raviarnaud@gmail.com<br>
+                +55 83 9114-7309
+            </div>
+            <div class="contato-item">
+                <strong>MARIANA FARIAS</strong><br>
+                marianafarias@gmail.com<br>
+                +55 83 8231-3010
+            </div>
+        </div>
+        <div class="imagem-container">
+            <img src="imagens/imagem_sala.png" alt="Sala decorada" style="width:100%">
+        </div>
     </div>
+</section>
 
-    <footer>
-        <h1 class="StudiUnire">STUDIO UNIRE</h1><img src="C:\Users\joaoa\OneDrive\Documents\GitHub\projeto_site\imagens\icons8-gmail-novo-384.png" width="23px"><img src="C:\Users\joaoa\OneDrive\Documents\GitHub\projeto_site\imagens\icons8-instagram-512.png" width="23px">
+    <!-- rodapé -->
+    <footer class="rodape">
+        <p>STUDIO UNIRE</p>
+        <div class="icones">
+            <img src="imagens/icons8-gmail-novo-384.png" alt="Gmail" width="50"/>
+            <img src="imagens/icons8-instagram-512.png" alt="Instagram"width="50" />
+        </div>
     </footer>
 </body>
-
 </html>

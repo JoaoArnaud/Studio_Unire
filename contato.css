@@ -1,0 +1,121 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #7D876E;
+    font-family: "OpenSans-Regular", sans-serif;
+    color: #f6f6f6;
+}
+
+/* Cabeçalho */
+.retagulo_verde {
+    height: 20px;
+    background-color: #5E6451;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #f6f6f6;
+}
+
+.paginas {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.sobre {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f6f6f6; 
+    text-decoration: none;
+}
+
+.contato {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f6f6f6; 
+}
+
+/* Seção Contato */
+.caixa-branca {
+    background-color: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.contato-titulo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.contato-item {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.imagem-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #5E6451;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    margin-top: 20px;
+}
+
+.rodape p {
+    font-size: 18px;
+}
+
+.rodape .icones img {
+    margin-left: 20px;
+    filter: invert(100%);
+}
