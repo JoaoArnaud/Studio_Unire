@@ -5,38 +5,49 @@
     <title>Studio Unire</title>
     <link rel="stylesheet" href="pagina_inicial.css">
 </head>
+
 <body>
+    <!-- TOPO -->
     <header>
         <div class="cabecalho">
             <div class="logo">
-                <img src="imagens/imagem_logo.jpg" height="65cm" width="76cm">
+                <img src="imagens/imagem_logo.jpg" alt="Logo Studio Unire" height="65px" width="76px">
                 <h1>STUDIO UNIRE</h1>
             </div>
-            <div class="paginas">
-                <h3 class="sobre">SOBRE</h3>
-                <h3 class="contato">CONTATOS</h3>
-            </div>
+            <nav class="paginas">
+                <a href="sobre.html" class="sobre">SOBRE</a>
+                <a href="contato.html" class="contato">CONTATOS</a>
+            </nav>
         </div>
     </header>
-    <section>
-        <div class="imagens_meio">
-            <img src="imagens/imagem_sala.png" height="847px" width="1508px">
-            <img src="imagens/imagem_condominio.jpg" height="847px" width="1508px">
-            <img src="imagens/imagem_escritorio.jpg" height="847px" width="1508px">
-            <img src="imagens/imagem_sala_de_aula.jpg" height="847px" width="1508px">
-            <img src="imagens/imagem_studio_banda.jpg" height="847px" width="1508px">
-            <div class="setas">
-                <img src="imagens/seta_esquerda.png" height="80px" width="80px">
-                <img src="imagens/seta_esquerda.png" height="80px" width="80px">
-            </div>
+
+    <!-- CARROSSEL -->
+    <section class="carrossel">
+        <div class="carrossel_imagens">
+            <img src="imagens/imagem_sala.png" class="slide slide_ativo">
+            <img src="imagens/imagem_condominio.jpg" class="slide">
+            <img src="imagens/imagem_escritorio.jpg" class="slide">
+            <img src="imagens/imagem_sala_de_aula.jpg" class="slide">
+            <img src="imagens/imagem_studio_banda.jpg" class="slide">
+        </div>
+        <div class="setas">
+            <img src="imagens/seta_esquerda.png" alt="Seta esquerda" class="seta_esquerda">
+            <img src="imagens/seta_direita.png" alt="Seta direita" class="seta_direita"> 
         </div>
     </section>
+
+    <!-- RODAPÉ -->
     <footer>
-        <div>
+        <div class="rodape">
             <h1>STUDIO UNIRE</h1>
-            <img src="imagens/icons8-gmail-novo-384.png" width="50px">
-            <img src="imagens/icons8-instagram-512.png" width="50px">
+            <div class="redes_sociais">
+                <img src="imagens/icons8-gmail-novo-384.png" alt="Gmail" width="50">
+                <img src="imagens/icons8-instagram-512.png" alt="Instagram" width="50">
+            </div>
         </div>
     </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="pagina_inicial.js"></script>
 </body>
 </html>
