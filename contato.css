@@ -38,6 +38,12 @@ body {
     color: #f6f6f6;
 }
 
+.pagina_inicial {
+    font-family: "OpenSans-Regular", sans-serif;
+    color: #f6f6f6; 
+    text-decoration: none;
+}
+
 .paginas {
     display: flex;
     gap: 30px;

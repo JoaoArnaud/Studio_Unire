@@ -25,6 +25,12 @@ body {
     color: #f6f6f6 ;
 }
 
+.pagina_inicial {
+    font-family: "OpenSans-Regular", sans-serif;
+    color: #f6f6f6; 
+    text-decoration: none;
+}
+
 h1 {
     font-family: "OpenSans-Regular", sans-serif;
     font-size: 32px;
