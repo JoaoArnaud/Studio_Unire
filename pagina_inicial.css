@@ -130,3 +130,45 @@ h1 {
     float: right;
     margin-right: 20px;
 }
+
+
+/* RESPONSIVO - CELULAR */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .paginas {
+        gap: 15px;
+    }
+
+    .paginas a {
+        font-size: 18px;
+    }
+
+    .carrossel {
+        height: 60vh;
+    }
+
+    .setas img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .redes_sociais {
+        justify-content: center;
+    }
+}
