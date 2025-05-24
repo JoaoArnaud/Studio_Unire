@@ -73,6 +73,14 @@ body {
     text-decoration: none;
 }
 
+.projetos {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f6f6f6; 
+    text-decoration: none;
+}
+
 /* Seção fundadores */
 .linha_1{
     margin-left: 10px;

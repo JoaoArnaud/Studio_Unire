@@ -1,0 +1,305 @@
+/* Reset e configurações básicas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f6f6f6;
+    font-family: "OpenSans-Regular", sans-serif;
+    color: black;
+}
+
+/* Cabeçalho */
+.caixa-verde {
+    background-color:#7D876E;
+    color:#f6f6f6;
+    height: auto;
+    width: 1449;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 1449;
+    background-color: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "OpenSans-Regular", sans-serif;
+    color: #f6f6f6;
+}
+
+.pagina_inicial {
+    font-family: "OpenSans-Regular", sans-serif;
+    color: #f6f6f6; 
+    text-decoration: none;
+}
+
+.paginas {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.sobre {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f6f6f6; 
+    text-decoration: none;
+}
+
+.contato {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f6f6f6; 
+    text-decoration: none;
+}
+
+.projetos {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f6f6f6; 
+    
+}
+
+
+
+/* seção do meio da página */
+.parte_1, .parte_2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* para quebrar linha se necessário */
+    gap: 30px; /* CORRETO: sem vírgula */
+}
+
+.projeto_1, .projeto_2 , .projeto_3 , .projeto_4 , .projeto_5 , .projeto_6  {
+    background-color: #7D876E;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px; /* largura padronizada */
+    height: auto;
+}
+
+.projeto_1 img, .projeto_2 img, .projeto_3 img, .projeto_4 img, .projeto_5 img, .projeto_6 img {
+    width: 400px; 
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Estilo para overlay ao passar o mouse nas imagens */
+.projeto {
+    position: relative;
+    overflow: hidden;
+}
+
+.projeto .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    z-index: 2;
+}
+
+.projeto:hover .overlay {
+    opacity: 1;
+}
+
+.titulo-projeto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+
+
+    .projeto_1 img, .projeto_2 img, .projeto_3 img, .projeto_4 img, .projeto_5 img, .projeto_6 img {
+        width: 90vw;
+        max-width: 350px;
+    }
+}
+
+
+/* Rodapé */
+.rodape {
+    background-color: #5E6451;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    margin-top: 20px;
+}
+
+.rodape p {
+    font-size: 18px;
+}
+
+.rodape .icones img {
+    margin-left: 20px;
+    filter: invert(100%);
+}
+
+
+/* seção das páginas de cada projeto */
+.studio-unire {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 60px;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.studio-unire {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px 60px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.texto-studio {
+    max-width: 500px; 
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #282828;
+    line-height: 1.6;
+}
+
+.texto-studio h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-top: 10px;
+    width: fit-content;
+}
+
+.retangulo-img {
+    background-color: #7D876E;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.retangulo-img img {
+    width: 400px; 
+    height: auto;
+    border-radius: 6px;
+}
+ 
+@media (max-width: 768px) {
+    .studio-unire {
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .retangulo-img img {
+        width: 90vw;
+        max-width: 350px;
+    }
+}
+
+ /* * --- Responsividade para telas pequenas --- */ 
+@media (max-width: 768px) {
+  /* Cabeçalho: empilhar logo e navegação */
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .paginas {
+    margin: 0;
+    gap: 20px;
+  }
+  
+/* parte dos projetos */
+.projeto_1 img, .projeto_2 img, .projeto_3 img, .projeto_4 img, .projeto_5 img, .projeto_6 img{
+    width: 90vw;
+    max-width: 350px;
+  }
+
+  /* parte de cada projeto */
+  /* Studio-unire: já está com media query, só reforçar alinhamento */
+  .studio-unire {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .texto-studio {
+    max-width: 90vw;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .retangulo-img img {
+    width: 90vw;
+    max-width: 350px;
+  }
+
+  /* Rodapé: empilhar e centralizar */
+  .rodape {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .rodape .icones img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
